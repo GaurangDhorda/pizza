@@ -8,7 +8,8 @@ import { CustomerDetailsComponent } from './components/customer-details/customer
 import { PizzaListComponent } from './components/pizza-list/pizza-list.component';
 
 @NgModule({
-  declarations: [...APP_MODULE_DECLARATIONS, SelectedpizzaviewerComponent, PizzaSizePickerComponent, NavbarComponent, CustomerDetailsComponent, PizzaListComponent],
+  declarations: [...APP_MODULE_DECLARATIONS, SelectedpizzaviewerComponent, PizzaSizePickerComponent,
+                    NavbarComponent, CustomerDetailsComponent, PizzaListComponent],
   imports: [...APP_MODULE_IMPORTS],
   providers: [],
   bootstrap: [AppComponent]
