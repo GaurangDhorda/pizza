@@ -10,10 +10,15 @@ import {
   MatSelectModule,
   MatToolbarModule
 } from '@angular/material';
+import { NbSidebarModule, NbLayoutModule, NbButtonModule } from '@nebular/theme';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { NbIconModule } from '@nebular/theme';
+
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PizzaFormContainerComponent } from './components/pizza-form-container/pizza-form-container.component';
+import { NbThemeModule } from '@nebular/theme';
 
 
 export const APP_MODULE_DECLARATIONS = [
@@ -33,5 +38,6 @@ export const APP_MODULE_IMPORTS = [
   MatListModule,
   MatToolbarModule,
   BrowserModule,
-  BrowserAnimationsModule
+  BrowserAnimationsModule,
+  NbThemeModule.forRoot(), NbSidebarModule.forRoot(), NbLayoutModule, NbButtonModule, NbEvaIconsModule, NbIconModule
 ];

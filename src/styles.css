@@ -19,3 +19,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding: 15px;
     border-radius: 3px;
   }
+
+  .ng-layout-header{
+    background-color : brown !important;
+  }
