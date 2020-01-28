@@ -1,5 +1,5 @@
 import { Component, OnInit, forwardRef } from '@angular/core';
-import { NG_VALUE_ACCESSOR } from '@angular/forms';
+import { NG_VALUE_ACCESSOR ,ControlValueAccessor } from '@angular/forms';
 import { PizzaSizeEnum } from '../services/pizza-form.interface';
 
 @Component({
@@ -12,7 +12,7 @@ import { PizzaSizeEnum } from '../services/pizza-form.interface';
     multi : true
   }]
 })
-export class PizzaSizePickerComponent implements OnInit {
+export class PizzaSizePickerComponent implements OnInit, ControlValueAccessor  {
   pizzaSize : PizzaSizeEnum;
   PizzaSizeEnum = PizzaSizeEnum;
   constructor() {  }

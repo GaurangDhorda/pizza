@@ -10,7 +10,6 @@ import { FormGroup, AbstractControl } from '@angular/forms';
   providers: [PizzaFormService, PizzaFormValidatorsService]
 })
 export class PizzaFormContainerComponent implements OnInit {
-  
   get form(): FormGroup {
     return this.pfService.form;
   }
@@ -23,10 +22,9 @@ export class PizzaFormContainerComponent implements OnInit {
   constructor(private pfService: PizzaFormService) { }
 
   ngOnInit() {
-   
     this.pfService.hello();
   }
-  onPizzaAdd(){
+  onPizzaAdd() {
     this.pfService.addPizza();
     this.pfService.selectPizzaForEdit(this.pfService.pizzasArray.length - 1);
   }
