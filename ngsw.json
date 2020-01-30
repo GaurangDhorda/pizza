@@ -1,0 +1,80 @@
+{
+  "configVersion": 1,
+  "timestamp": 1580387247857,
+  "index": "/pizza/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/pizza/favicon.ico",
+        "/pizza/index.html",
+        "/pizza/main-es2015.0a2b8a92c2a2ce31d749.js",
+        "/pizza/main-es5.0a2b8a92c2a2ce31d749.js",
+        "/pizza/manifest.webmanifest",
+        "/pizza/polyfills-es2015.66f22d07ce30f308d850.js",
+        "/pizza/polyfills-es5.c3a971024c04f75f1c83.js",
+        "/pizza/runtime-es2015.0d18029cc48539ed2f99.js",
+        "/pizza/runtime-es5.0d18029cc48539ed2f99.js",
+        "/pizza/styles.922a976bae99243f0106.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/pizza/assets/icons/icon-128x128.png",
+        "/pizza/assets/icons/icon-144x144.png",
+        "/pizza/assets/icons/icon-152x152.png",
+        "/pizza/assets/icons/icon-192x192.png",
+        "/pizza/assets/icons/icon-384x384.png",
+        "/pizza/assets/icons/icon-512x512.png",
+        "/pizza/assets/icons/icon-72x72.png",
+        "/pizza/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/pizza/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/pizza/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/pizza/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/pizza/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/pizza/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/pizza/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/pizza/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/pizza/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/pizza/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/pizza/index.html": "9decbe585d7020a23cbc64bede5b3c7507f84bd7",
+    "/pizza/main-es2015.0a2b8a92c2a2ce31d749.js": "32448a063db6b3e973a835ce49edd9aaef18ec43",
+    "/pizza/main-es5.0a2b8a92c2a2ce31d749.js": "4ce817feab56a3f1cb35d30ce2d1e1aa196362c7",
+    "/pizza/manifest.webmanifest": "f61c89b6e491d44f258d97dab7524f0487e3d11a",
+    "/pizza/polyfills-es2015.66f22d07ce30f308d850.js": "8779ed8d9bf0580e1b50b352a9b8fd520be24433",
+    "/pizza/polyfills-es5.c3a971024c04f75f1c83.js": "265946cd9cab1b54c805b1580c6c30ed7c3f3e18",
+    "/pizza/runtime-es2015.0d18029cc48539ed2f99.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/pizza/runtime-es5.0d18029cc48539ed2f99.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/pizza/styles.922a976bae99243f0106.css": "93b85c90d172e3a59fb469aa47e11bdf0d522c31"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
