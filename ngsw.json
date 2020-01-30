@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1580387247857,
+  "timestamp": 1580388675954,
   "index": "/pizza/index.html",
   "assetGroups": [
     {
@@ -52,7 +52,7 @@
     "/pizza/index.html": "9decbe585d7020a23cbc64bede5b3c7507f84bd7",
     "/pizza/main-es2015.0a2b8a92c2a2ce31d749.js": "32448a063db6b3e973a835ce49edd9aaef18ec43",
     "/pizza/main-es5.0a2b8a92c2a2ce31d749.js": "4ce817feab56a3f1cb35d30ce2d1e1aa196362c7",
-    "/pizza/manifest.webmanifest": "f61c89b6e491d44f258d97dab7524f0487e3d11a",
+    "/pizza/manifest.webmanifest": "ffa28f5789c3407bc7bcf9f3b821c389ac78d206",
     "/pizza/polyfills-es2015.66f22d07ce30f308d850.js": "8779ed8d9bf0580e1b50b352a9b8fd520be24433",
     "/pizza/polyfills-es5.c3a971024c04f75f1c83.js": "265946cd9cab1b54c805b1580c6c30ed7c3f3e18",
     "/pizza/runtime-es2015.0d18029cc48539ed2f99.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
