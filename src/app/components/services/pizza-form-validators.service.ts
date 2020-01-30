@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ValidatorFn, FormGroup, ValidationErrors, FormArray } from '@angular/forms';
+import { ValidatorFn, FormGroup, ValidationErrors, FormArray, FormControl } from '@angular/forms';
 import { PizzaSizeEnum, IToppingItem } from './pizza-form.interface';
 
 @Injectable()
@@ -30,5 +30,16 @@ export class PizzaFormValidatorsService {
   
         return Object.keys(errors).length ? errors : null;
       };
+    }
+    validateAllFormFields(formGroup: FormGroup) {
+      Object.keys(formGroup.controls).forEach(field => {
+        const control = formGroup.get(field);
+  
+        if (control instanceof FormControl) {
+          control.markAsTouched({ onlySelf: true });
+        } else if (control instanceof FormGroup) {
+          this.validateAllFormFields(control);
+        }
+      });
     }
 }

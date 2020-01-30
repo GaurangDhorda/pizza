@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PizzaFormService } from '../services/pizza-form.service';
 import { PizzaFormValidatorsService } from '../services/pizza-form-validators.service';
 import { FormGroup, AbstractControl } from '@angular/forms';
+import { IPizzaFormInterface } from '../services/pizza-form.interface';
 
 @Component({
   selector: 'app-pizza-form-container',
@@ -28,7 +29,14 @@ export class PizzaFormContainerComponent implements OnInit {
     this.pfService.addPizza();
     this.pfService.selectPizzaForEdit(this.pfService.pizzasArray.length - 1);
   }
-  submit(formValue){
+  submit(formValue) {
+    if (!this.pfService.isValid) {
+      return;
+    }
+
+    const order: IPizzaFormInterface = this.pfService.createPizzaOrderDto(formValue);
+
+    alert(`Thanks ${order.customerDetails.firstName}, the pizza is on the way!`);
 
   }
   reset(){

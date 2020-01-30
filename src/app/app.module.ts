@@ -8,12 +8,15 @@ import { PizzaSizePickerComponent } from './components/pizza-size-picker/pizza-s
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CustomerDetailsComponent } from './components/customer-details/customer-details.component';
 import { PizzaListComponent } from './components/pizza-list/pizza-list.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [...APP_MODULE_DECLARATIONS,
                     SelectedpizzaviewerComponent, PizzaSizePickerComponent,
                     NavbarComponent, CustomerDetailsComponent, PizzaListComponent],
-  imports: [...APP_MODULE_IMPORTS, AppRoutingModule ],
+  imports: [...APP_MODULE_IMPORTS, AppRoutingModule,
+                     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }) ],
   providers: [],
   bootstrap: [AppComponent]
 })

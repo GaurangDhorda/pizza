@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {FormGroup, FormBuilder, Validators, FormArray} from '@angular/forms';
-import { PizzaToppingsEnum, PizzaSizeEnum, IToppingItem } from './pizza-form.interface';
+import { PizzaToppingsEnum, PizzaSizeEnum, IToppingItem, IPizzaFormInterface } from './pizza-form.interface';
 import { PizzaFormValidatorsService } from './pizza-form-validators.service';
 
 @Injectable()
@@ -34,9 +34,9 @@ export class PizzaFormService {
     addPizza(): FormGroup {
         const pizzaGroup = this.getPizzaFormGroup();
         this.pizzasArray.push(this.getPizzaFormGroup());
-    
+
         this.form.markAsDirty();
-    
+
         return pizzaGroup;
     }
     getPizzaFormGroup(size: PizzaSizeEnum = PizzaSizeEnum.MEDIUM): FormGroup {
@@ -61,5 +61,28 @@ export class PizzaFormService {
 hello(){
     console.log(this.availableToppings)
 }    
+get isValid(): boolean {
+  if (!this.form.valid) {
+    this.pizzaValidatorsService.validateAllFormFields(this.form);
+    return false;
+  }
+
+  return true;
+}
+createPizzaOrderDto(data: IPizzaFormInterface): IPizzaFormInterface {
+  const order = {
+    customerDetails: data.customerDetails,
+    pizzas: data.pizzas
+  };
+
+  for (const pizza of order.pizzas) {
+    pizza.toppings = this.getSelectedToppings(pizza.toppings as IToppingItem[])
+      .map((i) => {
+        return i.name;
+      });
+  }
+
+  return order;
+}
 
 }
