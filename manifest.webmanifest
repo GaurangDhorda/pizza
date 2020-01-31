@@ -4,8 +4,8 @@
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
-  "scope": "/pizza/",
-  "start_url": "/pizza/index.html",
+  "scope": "https://gaurangdhorda.github.io/pizza/",
+  "start_url": "https://gaurangdhorda.github.io/pizza/index.html",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
