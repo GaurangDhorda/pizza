@@ -5,7 +5,7 @@
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/pizza/",
-  "start_url": "/pizza/index.html",
+  "start_url": "/pizza/",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
